@@ -1,9 +1,9 @@
-# 5G Delay Timeseries Prediction 📈
+# 5G Delay Timeseries Prediction 
 
-## Project Overview 🌟
+## Project Overview 
 This project focuses on predicting delay times in 5G networks using time series analysis and machine learning techniques. Our goal is to understand and forecast network performance, which is critical for enhancing the user experience in 5G services.
 
-## Research Findings 📚
+## Research Findings 
 - **Key Insights**:
   - By studying packet traces across the IP, RLC, MAC, and Physical layers, the project identifies the primary cause of the triangular pattern observed in Delay vs. SN (Sequence Number) graphs — Frame Alignment Delay in the RLC layer — and builds predictive models to forecast this behavior.
   - Delay is influenced by various factors including frame alignment , and environmental conditions,.
@@ -17,7 +17,7 @@ This project focuses on predicting delay times in 5G networks using time series 
 - **Model Performance**:
   - Our hybrid model outperformed traditional time series models by achieving a lower Mean Absolute Error (MAE).
   
-## Model Architecture 🏗️
+## Model Architecture 
 
 The architecture of our hybrid model comprises:
 - Time Series Analysis for trend identification.
@@ -59,7 +59,7 @@ The architecture of our hybrid model comprises:
 | AI Models      | Multiple ML models for prediction             |
 | Output Layer   | Predicted delay values                         |
 
-## Hybrid Approach Explanation 🔀
+## Hybrid Approach Explanation 
 Time series forecasting model is combined with machine learning techniques to leverage the benefits of both worlds:
 - **Time Series**: Captures trends and seasonality in the data.
 - **Machine Learning**: Models complex patterns and relationships in the data.
@@ -69,7 +69,7 @@ Hybrid (this work)	Predicts in small blocks of 10, resets with real data regular
 Key concept: Predict small future blocks → Reset with real data → Repeat.
 This approach allows us to enhance our predictions by utilizing historical data trends while applying advanced algorithms.
 
-## Dataset Information 📊
+## Dataset Information 
 - **Source**:ExPECA Testbed, KTH Royal Institute of Technology, Sweden
 - **Size**: 40,000 records of delay times
 - **Features**:IP Delay, RLC layer timing, sequence numbers, packet traces
@@ -78,7 +78,7 @@ This approach allows us to enhance our predictions by utilizing historical data 
   - Files: TR1.csv (training), TE1.csv (testing)
 
 
-## Results 🏆
+## Results 
 Our model achieved the following metrics on the testing dataset:
 - **Mean Absolute Error (MAE)**: 15.5 ms
 - **Root Mean Square Error (RMSE)**: 20.3 ms
